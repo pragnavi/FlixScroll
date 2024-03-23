@@ -1,23 +1,47 @@
-# ios101-lab5-flix1
+# FlixScroll: Trending Movies Showcase
+Welcome to FlixScroll, an immersive iOS application that brings the latest trending movies right to your fingertips. Developed as part of the iOS Application Development course with CodePath, this project demonstrates the power of Swift and UIKit in creating dynamic and engaging user interfaces. By fetching data from The Movie Database (TMDB) API, FlixScroll offers users a seamless experience to explore movie titles, descriptions, and visually striking poster images.
 
-## iOS 101: Lab - Unit 5 - Flix Pt 1 (Feed)
+## Features
+FlixScroll includes the following key features:
 
-![16_app_required_features](https://user-images.githubusercontent.com/11927517/223374834-93edad78-9273-45d1-9d42-50ece5bb5b51.gif)
+* Dynamic Data Fetching: Utilizes The Movie Database (TMDB) API to fetch an array of the latest trending movies.
+* Custom Table Views: Displays a scrolling list of movies, where each entry shows the movie's poster image, title, and a brief description.
+* Remote Image Loading: Efficiently loads and displays remote images given a URL, enhancing the app's responsiveness and visual appeal.
+* Interactive UI: Employs custom table view cells to improve user interaction and app aesthetics.
 
-### Required Features
+## Getting Started
+* Prerequisites
+Before you begin, ensure you have the following installed:
 
-### 🎯 Goals
+Xcode 12 or later
+Swift 5 or later
+iOS 14 or later for the best performance and compatibility
+* Installation
+Clone the repository:
+bash
+Copy code
+git clone https://github.com/YourGitHubUsername/FlixScroll.git
+Open the project in Xcode:
+Navigate to the cloned repository folder and open FlixScroll.xcodeproj.
 
-By the end of this lab you will be able to...
+* Install dependencies (if any):
+If the project uses CocoaPods for dependency management, navigate to the project directory in Terminal and run:
 
-1. Fetch a an array of data objects from an API
-1. Display a list of objects in a table view
-1. Load and display remote images given a URL
+bash
+Copy code
+pod install
+Then, open the .xcworkspace file to ensure all dependencies are correctly linked.
 
-### Features
+* Run the application:
+Select an iOS simulator or connect an iOS device and press Run in Xcode.
+* Usage
+Upon launching FlixScroll, users are presented with a curated list of trending movies fetched from TMDB. You can scroll through the list to explore different titles. Tapping on a movie will reveal more detailed information about it, including a longer description and a larger poster image.
 
-#### Required Features
+## Contributing
+Contributions to FlixScroll are always welcome! If you have an idea for an improvement or find a bug, please follow these steps:
 
-1. Fetch movie data from The Movie DB API
-1. Display movies scrolling list of movies fetched from the TMDB API.
-   1. Each movie in the list should display the movie’s poster image, title and description
+Fork the repository.
+Create a new branch (git checkout -b feature/AmazingFeature).
+Commit your changes (git commit -m 'Add some AmazingFeature').
+Push to the branch (git push origin feature/AmazingFeature).
+Open a pull request.
