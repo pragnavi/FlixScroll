@@ -7,12 +7,30 @@ import UIKit
 import Nuke
 
 // TODO: Add table view data source conformance
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // Return the number of rows for the table.
+        return 50
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // Create the cell
+        let cell = UITableViewCell()
+
+        // Configure the cell (i.e. update UI elements like labels, image views, etc.)
+        // Get the row where the cell will be placed using the `row` property on the passed in `indexPath` (i.e., `indexPath.row`)
+        cell.textLabel?.text = "Row \(indexPath.row)"
+
+        // Return the cell for use in the respective table view row
+        return cell
+    }
+    
 
 
     // TODO: Add table view outlet
 
-
+    @IBOutlet weak var tableView: UITableView!
+    
     // TODO: Add property to store fetched movies array
 
 
@@ -20,6 +38,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         // TODO: Assign table view data source
+        tableView.dataSource = self
 
 
         fetchMovies()
